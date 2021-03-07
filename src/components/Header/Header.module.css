@@ -1,0 +1,45 @@
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem 0 10rem;
+  background:var(--color-white);
+  height: 80px;
+  border-bottom: 1px  solid var(--color-primary);
+} 
+
+.header > div {
+  height: 80px;
+  width: 80px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  color: var(--color-green-primary);
+}
+
+.nav a:hover:not(.active) {
+  color: #000;
+  transition: 0.3s;
+}
+
+.active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.nav > a {
+  padding: 10px 10px 10px 10px;
+
+}
+
+
+
+.image {
+  width: 100%;
+  height: 100%; 
+  object-fit: inherit;
+}

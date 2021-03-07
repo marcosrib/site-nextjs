@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #3BCFB7;
+  --color-white: #FFF;
+  --color-green-primary: #7A7474;
+}
+
 html,
 body {
   padding: 0;
@@ -14,3 +20,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
