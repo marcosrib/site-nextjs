@@ -1,4 +1,4 @@
-import Layout from "../components";
+import Layout from "../components/Layout";
 import styles from '../../styles/Home/Home.module.css'
 export default function Home() {
   {/*<img src="/home-image.jpeg" className={styles.img} alt="kknknkk"/>*/ }
