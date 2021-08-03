@@ -1,0 +1,10 @@
+.cardContent {
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+
+#text {
+    color: var(--color-black-primary);
+    font-weight: 300;
+    font-size: 14px;
+}

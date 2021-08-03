@@ -16,8 +16,7 @@
 }
 
 .card {
-    background-color: rgba(59, 207, 183, 4);
-    opacity: 0.2;
+    background-color: rgba(59, 207, 183, 0.05);
     margin-top: 80px;
     display: flex;
     flex-direction: row;
@@ -27,4 +26,12 @@
     color: var(--color-black-primary);
     font-weight: 300;
     font-size: 14px;
+}
+
+.verticalLine {
+    width: 4px;
+    background: var(--color-primary);
+    float: left;
+    height: auto;
+    margin: 10px 0 10px 0;
 }
