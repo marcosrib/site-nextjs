@@ -16,10 +16,10 @@ const Header: React.FC = () => {
       </Head>
       <header className={styles.header}>
         <div>
-          <img className={styles.image} 
-           src="/logo-thais (1).svg"
+          <img className={styles.image}
+            src="/logo-thais (1).svg"
             alt="Picture of the author"
-             />
+          />
         </div>
         <nav className={styles.nav}>
           <Link href='/'><a className={router.pathname == "/" ? styles.active : ""}>Home</a></Link>
