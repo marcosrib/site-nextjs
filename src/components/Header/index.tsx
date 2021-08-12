@@ -24,6 +24,7 @@ const Header: React.FC = () => {
         <nav className={styles.nav}>
           <Link href='/'><a className={router.pathname == "/" ? styles.active : ""}>Home</a></Link>
           <Link href='/sobre'><a className={router.pathname == "/sobre" ? styles.active : ""} >Sobre</a></Link>
+          <Link href='/oquefaco'><a className={router.pathname == "/oquefaco" ? styles.active : ""}>O que faço</a></Link>
           <Link href='/contato'><a className={router.pathname == "/contato" ? styles.active : ""}>Contato</a></Link>
         </nav>
       </header>

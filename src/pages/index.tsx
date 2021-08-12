@@ -4,10 +4,11 @@ export default function Home() {
   {/*<img src="/home-image.jpeg" className={styles.img} alt="kknknkk"/>*/ }
   return (
     <div className={styles.img}>
-      <Image src="/home-image.png"
+      {/*  <Image src="/home-image.png"
         alt="kknknkk"
-        layout='fill'
-      />
+        height={"100vh"}
+        width="100vw"
+  /> */}
 
       <div className={styles.cardContainer}>
         <h1 id={styles.title}>TERAPIA ONLINE NO CONFORTO DA SUA CASA</h1>
