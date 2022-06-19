@@ -1,7 +1,6 @@
-import React, {cloneElement, useState} from "react";
+import React, {useState, useEffect} from "react";
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image'
 import { useRouter } from "next/router";
 import styles from './Header.module.css'
 
@@ -10,12 +9,21 @@ const Header: React.FC = () => {
 
   const router = useRouter();
   const openMenu = () => {
+    console.log(toggle);
+    
     setToggle(!toggle);
   }
 
   const closeMenu = () => {
     setToggle(!toggle);
   }
+  useEffect(() => {
+    if(toggle) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+  },[toggle])
 
 
 
