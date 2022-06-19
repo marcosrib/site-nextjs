@@ -61,6 +61,7 @@
     z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
+    font-size: 25px;
   }  
   .header {
     justify-content: space-between;
