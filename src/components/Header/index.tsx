@@ -34,8 +34,8 @@ const Header: React.FC = () => {
           />
         </div>
         <nav  id={styles.nav} className={toggle ? styles.menuactive: ""}>
-          <button onClick={openMenu}  id={styles.menumobile}>Menu
-          <span id={styles.hamburger}></span>
+          <button onClick={openMenu}  id={styles.menumobile}>
+            <span id={styles.hamburger}></span>
           </button>
           <div id={styles.menu} >
             <Link href='/'><a onClick={closeMenu}  className={router.pathname == "/" ? styles.active : ""}>Home</a></Link>
