@@ -35,10 +35,13 @@ const Header: React.FC = () => {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
       <header className={styles.header}>
-        <div>
-          <img className={styles.image}
-            src="/logo-thais (1).svg"
+        <div className={styles.logoContent}>
+          <img 
+            src="/logo1.png"
             alt="Picture of the author"
+            width={100}
+            height={60}
+           
           />
         </div>
         <nav  id={styles.nav} className={toggle ? styles.menuactive: ""}>
