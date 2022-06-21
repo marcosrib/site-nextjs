@@ -56,9 +56,19 @@
     position: initial;
   }
   .title {
-    font-size: 30px;
+    font-size: 20px;
   }
   .subTitle {
-    font-size: 15px;
+    font-size: 10px;
+  }
+
+  .img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .textImageContent {
+    height: 150px;
+    width: 100%;
   }
 }
