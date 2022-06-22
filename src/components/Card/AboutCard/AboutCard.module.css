@@ -7,6 +7,9 @@
     background-color: var(--color-green-primary);
     border-radius: 5px;
     margin: 0 10px 40px 0px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 .cardContent:hover {
     background-color: var(--color-grey-primary);
