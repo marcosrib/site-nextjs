@@ -81,6 +81,11 @@
 .descriptionStrong {
   color: var(--color-green-primary);
 }
+
+.img {
+  width: auto;
+  height: 300px;
+}
 @media (max-width: 700px) {
    
   .title {
