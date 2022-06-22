@@ -10,10 +10,10 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.content}>
    
-        <div className={styles.textImageContent}>
+        <div className={styles.textContent}>
           <span className={styles.title}>Terapia Online No Conforto Da Sua Casa</span>
           <span className={styles.subTitle}>Está a alguns cliques</span>
-          <div className={styles.buttonAgendar} >
+          <div className={styles.buttonContato} >
             <Link href='/contato'><a  className={router.pathname == "/contato" ? styles.active : ""}>Contato</a></Link>
           </div>
         </div>
