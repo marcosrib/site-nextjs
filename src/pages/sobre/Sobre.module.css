@@ -8,7 +8,8 @@
 }
 
 #title {
-    color: var(--color-grey-primary);
+    color: var(--color-green-primary);
+    
 }
 
 
@@ -17,20 +18,18 @@
     margin-top: 80px;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 #text {
     color: var(--color-grey-primary);
-    font-weight: 600;
+    font-weight: 300;
     font-size: 14px;
 }
 
-.verticalLine {
-    width: 4px;
-    background: var(--color-primary);
-    float: left;
-    height: auto;
-    margin: 10px 0 10px 0;
+#textStrong {
+    color: var(--color-blue-primary);
+    font-weight: bold;
 }
 
 @media (max-width: 700px) {

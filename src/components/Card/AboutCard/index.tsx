@@ -7,7 +7,7 @@ interface Props {
 function AboutCard({ text, title }: Props) {
   return (
     <div className={styles.cardContent}>
-      <h3>{title}</h3>
+      <span className={styles.title}>{title}</span>
       <span id={styles.text}>
         {text}
       </span>
