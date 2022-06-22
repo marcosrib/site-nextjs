@@ -59,7 +59,7 @@
 
 .containerSobre {
  display: flex;
- margin: 3% 20% 3% 15%;
+ margin: 3% 20% 3% 17%;
 }
 
 .descriptionContent {
@@ -96,12 +96,14 @@
     font-size: 15px;
   }
 
+ 
   .content {
-    height: 30vh;
+    padding-top: 5%;
+    height: 25vh;
   }
   .img {
     width: auto;
-    height: 180px;
+    height: 250px;
   }
 
   .textImageContent {
@@ -119,13 +121,17 @@
     border-radius: 5px;
   }
   .nameTitle {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--color-green-primary);
   }
   
   .description {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 13px;
+    line-height: 13px;
     color: var(--color-grey-primary);
   }
+
+  .containerSobre {
+    margin: 3% 5% 3% 13%;
+   }
 }
