@@ -1,0 +1,139 @@
+.container {
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+    height: 100vh;
+    padding-top: 100px; 
+}
+
+.groupTitles {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    padding: 0;
+    margin: 0;
+}
+.subTitle {
+    padding: 0;
+    margin: 5px 0 0 0;
+    color: var(--color-green-primary);
+}
+
+.contactContainer {
+    display: flex;
+    margin-top: 40px;
+}
+.titleContactUs {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.contactUs {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.contactUsNameTitle {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.contactUsName {
+    font-size: 15px;
+    color: var(--color-grey-primary);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.contactUsPhoneTitle{
+    font-weight: 500;
+}
+.contactUsPhonePhone{
+    font-size: 15px;
+    color: var(--color-grey-primary);
+    font-weight:500;
+    margin-bottom: 30px;
+}
+
+.contactUsEmailTitle {
+    font-weight: 500;  
+}
+
+.contactUsEmail{
+    color: var(--color-grey-primary);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.formMessage {
+    width: 100%;
+    margin-left: 25px;
+    height: 400px;
+}
+
+.titleMessage {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.groupFields {
+    display: flex;
+    justify-content: space-around;
+}
+
+.field {
+    height: 50px;
+    padding-bottom: 10px;
+ }
+ .field.name {
+    padding-right: 10px;
+ }
+.field > input {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   padding-left: 8px;
+   border: 1px solid var(--color-grey-primary);
+}
+
+.textArea > textarea{
+    padding: 5px  0 0 8px;
+    height: 70px;
+    width: 100%;
+}
+.button {
+    padding-top: 10px;
+}
+
+.button  > button{
+    width: 100px;
+    height: 30px;
+    background: var(--color-green-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+ 
+  }
+   
+  @media (max-width: 700px) {
+    .container {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; 
+      padding: 25px 15px 0 15px;
+
+
+    }
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .formMessage {
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 0 0;
+    }
+    
+}
