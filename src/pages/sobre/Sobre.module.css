@@ -28,7 +28,7 @@
 }
 
 #textStrong {
-    color: var(--color-blue-primary);
+    color: var(--color-grey-primary);
     font-weight: bold;
 }
 
