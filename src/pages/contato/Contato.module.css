@@ -2,8 +2,7 @@
     width: 700px; 
     margin-left: auto;
     margin-right: auto; 
-    height: calc(100vh - 80px);
-    padding-top: 100px; 
+    padding-top: 10%; 
 }
 
 .groupTitles {

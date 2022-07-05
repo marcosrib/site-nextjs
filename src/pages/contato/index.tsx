@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './Contato.module.css'
+
+
 function Contato() {
+  const [value, setValue] = useState(null);
+
+  useEffect(() => {
+    setValue(window.innerHeight);
+  }, []);
+
   return( 
-    <section className={styles.container}>
+    <section className={styles.container} style={{height:value - 80}}>
       <div className={styles.groupTitles}>
+      <i className="fa-solid fa-user"></i>
         <h1 className={styles.title}>Contato</h1>
         <h6 className={styles.subTitle}>Fale conosco</h6>
       </div>

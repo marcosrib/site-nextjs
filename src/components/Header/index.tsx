@@ -19,12 +19,9 @@ const Header: React.FC = () => {
   }
   useEffect(() => {
     if(toggle) {
-      document.body.style.overflow = "hidden"
-      console.log("aqui 1");
-      
+      document.body.style.overflow = "hidden"      
     } else {
       document.body.style.overflow = "auto"
-      console.log("aqui 2");
     }
   },[toggle])
 
