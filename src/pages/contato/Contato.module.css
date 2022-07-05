@@ -2,7 +2,7 @@
     width: 700px; 
     margin-left: auto;
     margin-right: auto; 
-    height: 100vh;
+    height: cal(100vh - 80px);
     padding-top: 100px; 
 }
 
@@ -102,6 +102,9 @@
     padding: 5px  0 0 8px;
     height: 70px;
     width: 100%;
+    border-radius: 5px;
+    padding-left: 8px;
+    border: 1px solid var(--color-grey-primary);
 }
 .button {
     padding-top: 10px;

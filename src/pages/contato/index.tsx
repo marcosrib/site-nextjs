@@ -23,7 +23,7 @@ function Contato() {
         </div>
         <div className={styles.formMessage}>
           <div className={styles.titleMessage}>Mensagem</div>
-          <form>
+          <form className={styles.form}>
             <div className={styles.groupFields}>
               <div className={`${styles.field} ${styles.name}`}>
                 <input type="text" placeholder="Nome"/>

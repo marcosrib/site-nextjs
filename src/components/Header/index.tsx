@@ -15,13 +15,16 @@ const Header: React.FC = () => {
   }
 
   const closeMenu = () => {
-    setToggle(!toggle);
+    setToggle(false);
   }
   useEffect(() => {
     if(toggle) {
       document.body.style.overflow = "hidden"
+      console.log("aqui 1");
+      
     } else {
       document.body.style.overflow = "auto"
+      console.log("aqui 2");
     }
   },[toggle])
 
