@@ -2,7 +2,7 @@
     width: 700px; 
     margin-left: auto;
     margin-right: auto; 
-    height: cal(100vh - 80px);
+    height: calc(100vh - 80px);
     padding-top: 100px; 
 }
 
@@ -70,7 +70,6 @@
 .formMessage {
     width: 100%;
     margin-left: 25px;
-    height: 400px;
 }
 
 .titleMessage {
@@ -87,7 +86,7 @@
     height: 50px;
     padding-bottom: 10px;
  }
- .field.name {
+.field.name {
     padding-right: 10px;
  }
 .field > input {
@@ -125,9 +124,9 @@
       width: 100%;
       margin-left: 0;
       margin-right: 0; 
-      padding: 25px 15px 0 15px;
-
-
+      height: auto;
+      padding: 25px 15px 100px 15px;
+ 
     }
     .contactContainer {
         display: flex;
