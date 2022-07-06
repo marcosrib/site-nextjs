@@ -2,7 +2,7 @@ import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.content}>
         <div className="contato">
           <h3 id={styles.title}>Contato</h3>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <span id={styles.text}>Seguda à sexta das 8:00h às 22:00h</span>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 
