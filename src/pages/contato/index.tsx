@@ -5,12 +5,15 @@ import styles from './Contato.module.css'
 function Contato() {
   const [value, setValue] = useState(null);
 
+
   useEffect(() => {
-    setValue(window.innerHeight);
+    let i = window.screen.availHeight / 4.5;
+    
+    setValue(window.screen.availHeight - i);
   }, []);
 
   return( 
-    <section className={styles.container} style={{height:value - 80}}>
+    <section className={styles.container}  style={{height:value}}>
       <div className={styles.groupTitles}>
       <i className="fa-solid fa-user"></i>
         <h1 className={styles.title}>Contato</h1>
