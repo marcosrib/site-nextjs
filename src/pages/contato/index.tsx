@@ -21,24 +21,18 @@ function Contato() {
   
   const handleSubmit = useCallback(async (e)=> {
     e.preventDefault();
-    console.log('enviado form');
-    console.log(form);
+
     try {
        validateFields(form);
-   
-      
-       console.log('enviado form');
        
     } catch (error) {
-      console.log(error.message);
-      
+      const err = JSON.parse(error.message)
+      console.log(err);
     }
-  },[])
+  },[form])
 
 
   useEffect(() => {
-    console.log(form);
-    
     let percetage = 0.20;
     let height = window.screen.availHeight;
     let valuePercentage =  Math.round(window.screen.availHeight * percetage); 
@@ -76,6 +70,7 @@ function Contato() {
               <div className={`${styles.field} ${styles.name}`}>
                 <input 
                   type="text" 
+                  name="name"
                   placeholder="Nome"
                   onChange={e => {setInput({name: e.target.value})}}
                 />
