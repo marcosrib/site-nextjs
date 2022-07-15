@@ -12,22 +12,21 @@ const formData = {
 function Contato() {
   const [value, setValue] = useState(0);
   const [form, setForm] = useState<Form>(formData);
+  const [errors, setErros] = useState<Form>();
 
   const setInput = (newValue:any) => {
-    console.log(newValue);
-    
     setForm(oldForm => ({...oldForm, ...newValue}) )
   }
   
   const handleSubmit = useCallback(async (e)=> {
     e.preventDefault();
-
     try {
        validateFields(form);
-       
     } catch (error) {
       const err = JSON.parse(error.message)
       console.log(err);
+      
+      setErros(err)
     }
   },[form])
 
@@ -43,7 +42,7 @@ function Contato() {
 
 
   return( 
-    <section className={styles.container}  style={{height:value}}>
+    <section className={styles.container}  >
       <div className={styles.groupTitles}>
       <i className="fa-solid fa-user"></i>
         <h1 className={styles.title}>Contato</h1>
@@ -74,7 +73,9 @@ function Contato() {
                   placeholder="Nome"
                   onChange={e => {setInput({name: e.target.value})}}
                 />
+           <p>{errors?.name}</p> 
               </div>
+            
               <div className={`${styles.field} ${styles.email}`}>
                 <input 
                   type="text" 

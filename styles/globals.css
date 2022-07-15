@@ -9,6 +9,13 @@
   --color-black-primary: #3F3B3B;
   --color-background: #f6f7f9;
   --color-blue-primary: #65cedd;
+
+
+
+  --font-text: 1rem;
+
+/*Padding mobile */
+  --padding-content-mobile:30px 10px 30px 10px;
 }
 
 html, body {

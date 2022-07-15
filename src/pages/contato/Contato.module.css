@@ -3,7 +3,8 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 10%; 
-    height:  100vmin;;
+    height:  100vh;
+    min-height: 500px;
 }
 
 .groupTitles {
@@ -79,11 +80,12 @@
 
 .groupFields {
     display: flex;
-    justify-content: space-around;
+    
 }
 
 .field {
     height: 50px;
+    width: 100%;
     padding-bottom: 10px;
  }
 .field.name {

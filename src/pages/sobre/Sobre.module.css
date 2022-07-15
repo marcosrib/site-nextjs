@@ -8,11 +8,8 @@
 }
 
 #title {
-    color: var(--color-green-primary);
-    
+    color: var(--color-green-primary);   
 }
-
-
 
 .card {
     margin-top: 80px;
@@ -24,7 +21,7 @@
 #text {
     color: var(--color-grey-primary);
     font-weight: 300;
-    font-size: 14px;
+    font-size: var(--font-text);
 }
 
 #textStrong {
