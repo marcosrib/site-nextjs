@@ -1,6 +1,6 @@
 import React, {useEffect, useState,useCallback} from 'react';
 import styles from './Contato.module.css';
-import {validateFields,  Form} from './validateFields';
+import {validateFields,  Form} from '../../util/_validateFields';
 
 const formData = {
     name: "",

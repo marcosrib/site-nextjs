@@ -11,12 +11,15 @@ function sobre() {
       <span id={styles.textStrong}> “MÍDIAS SOCIAIS, ADOLESCENTES E ATENDIMENTO PSICOLÓGICO”.</span></p>
       <div className={styles.card}>
         <AboutCard
-          title="Missão"
+          title="Missão" 
+          iconName='coffee'
           text="Levar a psicologia a todos, acreditando que a vida é uma escola e aprender a viver conectado a nossas essência é a lição mais importante para viver cada dia MELHOR!" />
-        <AboutCard
+        <AboutCard 
+        iconName='eye'
           title="Visão"
           text="Oferecer de maneira qualificada atendimento psicológico dentro da modalidade online. Dessa forma é possível dar suporte para qualquer pessoa do Brasil ou até mesmo para brasileiros que moram no exterior." />
         <AboutCard
+          iconName='chart-column'
           title="Valores"
           text="Sou uma alma humana, comprometida, determinada, de coração grato e motivada. Apaixonada pelo que faz, tenho como essência trabalhar ajudando as pessoas na busca do seu PROPÓSITO, QUALIDADE DE VIDA, SAÚDE MENTAL e sua MELHOR VERSÃO!" />
       </div>
