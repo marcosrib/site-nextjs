@@ -8,7 +8,7 @@
 .content {
   display: flex;
   background: var(--color-background);
-  height: 300px;
+  height: 30rem;
   width: 100%;
 }
 
@@ -45,7 +45,7 @@
 .buttonContato {
    display: flex;
     width: 150px;
-    height: 40px;
+    height: 4rem;
     background: var(--color-green-primary);
     margin: 5% 20%;
     justify-content: center;
@@ -55,7 +55,7 @@
 
 .buttonContato > a {
   color: var(--color-white);
-  font-size: 20px;
+  font-size: var(--font-text);
 }
 .buttonContato:hover:not(.active) {
   color: #000;
@@ -100,7 +100,7 @@
   height: 300px;
 }
 @media (max-width: 700px) {
-   
+  
   .title {
     font-size: 20px;
     margin-left: 8%;
@@ -109,10 +109,9 @@
     font-size: 15px;
   }
 
- 
   .content {
     padding-top: 5%;
-    height: 25vh;
+    height: 20rem;
   }
   .img {
     width: auto;

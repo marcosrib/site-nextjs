@@ -4,13 +4,25 @@ import AboutCard from '../../components/Card/AboutCard';
 function sobre() {
   return (
     <div className={styles.container} >
-      <h1 id={styles.title}>Sobre mim</h1>
-      <p id={styles.text}>Olá, seja bem vindo a minha página! Me chamo <span id={styles.textStrong}> Thais Gomes Oliveira</span>, sou psicóloga graduada pela Universidade Paulista, tenho pós graduação em Terapia Cognitivo Comportamental, atuo como psicóloga clínica em atendimentos para adolescentes e adultos.</p>
-      <p id={styles.text}>Além da prática em consultório clínico, tenho experiência no âmbito hospitalar psiquiátrico, cuja a conduta é voltada para proporcionar acolhimento individual e/ ou grupal, oficina terapêutica e atividades que contribuam para saúde mental.</p>
-      <p id={styles.text}>Também, tive a oportunidade de participar do V Congresso Brasileiro Psicologia: Ciência e Profissão, na Universidade Nove de Julho/SP, realizado de 14 a 18 de novembro de 2018, através da exposição e apresentação de pôster desenvolvido a partir do tema central  
-      <span id={styles.textStrong}> “MÍDIAS SOCIAIS, ADOLESCENTES E ATENDIMENTO PSICOLÓGICO”.</span></p>
+      <h1 id={styles.title}>Quem sou?</h1>
+      <p id={styles.text}>Olá, seja bem vindo a minha página! Me chamo <span id={styles.textStrong}> Thais Gomes Oliveira. </span>
+       Psicóloga Clínica ,com base na abordagem TCC - Terapia Cognitivo
+Comportamental , CRP 06/154046.</p>
+      <p id={styles.text}>Psicóloga graduada pela Universidade Paulista - UNIP.
+Cursos complementares em Inteligência Emocional, Teoria dos Temperamentos,
+especialização em TCC.</p>
+      <p id={styles.text}>Experiência em atendimento clínico individual e grupal com enfoque nas demandas
+de ansiedade, saúde mental, autoconhecimento, inteligência emocional,
+psicoeducação, fobias e medos.<br></br>Tenho como objetivo auxiliar na prevenção e tratamento de doenças psíquicas, com
+foco no aumento da qualidade de vida e no equilíbrio emocional.</p>
+      <p id={styles.text}>Co Fundadora do projeto PsicoStop, criado por quatro psicólogas que visam
+dedicar seus conhecimentos a fim de promover saúde mental através de Plantão
+Psicológico, Roda de Conversa, Palestras e Psicoeducação.<br></br><br></br><br></br></p>
+
+<span id={styles.textStrong}>Atendimento Presencial e On-line.</span>
+      
       <div className={styles.card}>
-        <AboutCard
+          <AboutCard
           title="Missão" 
           iconName='coffee'
           text="Levar a psicologia a todos, acreditando que a vida é uma escola e aprender a viver conectado a nossas essência é a lição mais importante para viver cada dia MELHOR!" />

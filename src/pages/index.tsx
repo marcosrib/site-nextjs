@@ -7,10 +7,10 @@ export default function Home() {
   const router = useRouter();
   {/*<img src="/home-image.jpeg" className={styles.img} alt="kknknkk"/>*/ }
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="home">
       <div className={styles.content}>
    
-        <div className={styles.textContent}>
+        <div className={styles.textContent} >
           <span className={styles.title}>Terapia Online No Conforto Da Sua Casa</span>
           <span className={styles.subTitle}>Está a alguns cliques</span>
           <div className={styles.buttonContato} >
