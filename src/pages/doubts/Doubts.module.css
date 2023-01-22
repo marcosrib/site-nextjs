@@ -39,3 +39,10 @@
 .open {
     transform: rotate(180deg);
 }
+
+@media (max-width: 700px) {
+  
+    .container {
+      width: 25em;
+    }
+}
