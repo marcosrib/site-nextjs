@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import styles from '../../styles/Home/Home.module.css'
+import styles from './Home.module.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 
 export default function Home() {
   const router = useRouter();
@@ -14,7 +15,7 @@ export default function Home() {
           <span className={styles.title}>Terapia Online No Conforto Da Sua Casa</span>
           <span className={styles.subTitle}>Está a alguns cliques</span>
           <div className={styles.buttonContato} >
-            <Link href='/contato'><a  className={router.pathname == "/contato" ? styles.active : ""}>Contato</a></Link>
+            <AnchorLink   href='#contact'>Contato</AnchorLink>
           </div>
         </div>
         </div>

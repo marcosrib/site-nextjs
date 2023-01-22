@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from "next/router";
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 import styles from './Header.module.css'
 
 const Header: React.FC = () => {
@@ -49,10 +49,10 @@ const Header: React.FC = () => {
             <span id={styles.hamburger}></span>
           </button>
           <div id={styles.menu} >
-            <Link href='/'><a onClick={closeMenu}  className={router.pathname == "/" ? styles.active : ""}>Home</a></Link>
-            <Link href='/sobre'><a onClick={closeMenu}  className={router.pathname == "/sobre" ? styles.active : ""} >Sobre</a></Link>
-            <Link href='/oquefaco'><a onClick={closeMenu}  className={router.pathname == "/oquefaco" ? styles.active : ""}>O que faço</a></Link>
-            <Link href='/contato'><a onClick={closeMenu}  className={router.pathname == "/contato" ? styles.active : ""}>Contato</a></Link>
+            <AnchorLink onClick={closeMenu} href='#home'>Home</AnchorLink>
+            <AnchorLink onClick={closeMenu} href='#about'>Sobre</AnchorLink>
+            <AnchorLink onClick={closeMenu} href='#oquefaco'>O que faço</AnchorLink>
+            <AnchorLink onClick={closeMenu} href='#contact'>Contato</AnchorLink>
           </div>
         </nav>
       </header>

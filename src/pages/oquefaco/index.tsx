@@ -2,7 +2,7 @@ import styles from './Oquefaco.module.css'
 import { content } from '../../contentPage/oqueFaco';
 function OqueFaco() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="oquefaco">
             <div className={styles.content}>
             <div className={styles.contentText}>
                 <h1 className={styles.Title}>{content.psicoterapia.title}</h1>

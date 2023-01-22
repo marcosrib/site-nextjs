@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Sobre.module.css'
 import AboutCard from '../../components/Card/AboutCard';
-function sobre() {
+function About() {
   return (
-    <div className={styles.container} >
+    <div className={styles.container} id="about">
       <h1 id={styles.title}>Quem sou?</h1>
       <p id={styles.text}>Olá, seja bem vindo a minha página! Me chamo <span id={styles.textStrong}> Thais Gomes Oliveira. </span>
        Psicóloga Clínica ,com base na abordagem TCC - Terapia Cognitivo
@@ -39,4 +39,4 @@ Psicológico, Roda de Conversa, Palestras e Psicoeducação.<br></br><br></br><b
   )
 }
 
-export default sobre;
+export default About;

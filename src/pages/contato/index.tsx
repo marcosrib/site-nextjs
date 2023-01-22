@@ -42,8 +42,8 @@ function Contato() {
 
 
   return( 
-    <section className={styles.container}  >
-      <div className={styles.groupTitles}>
+    <section className={styles.container}  id="contact" >
+      <div className={styles.groupTitles} >
       <i className="fa-solid fa-user"></i>
         <h1 className={styles.title}>Contato</h1>
         <h6 className={styles.subTitle}>Fale conosco</h6>
