@@ -5,6 +5,7 @@ import Home from '../../pages/home';
 import About from '../../pages/about';
 import OqueFaco from '../../pages/oquefaco';
 import Doubts from '../../pages/doubts';
+import Gallery from '../../pages/gallery';
 const Layout: React.FC = ({ children }) => {
   return (
     <>
@@ -13,8 +14,10 @@ const Layout: React.FC = ({ children }) => {
       <About/>
       <OqueFaco/>
       <Doubts/>
+      <Gallery/>
       <Contato/>
       <Footer />
+     
     </>
   );
 }

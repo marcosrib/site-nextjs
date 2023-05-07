@@ -1,0 +1,38 @@
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* três colunas com largura igual */
+  grid-gap: 1px; /* espaço entre as imagens */
+}
+
+.gallery-item {
+  position: relative; /* para que a legenda fique dentro da div */
+}
+
+.gallery-item img {
+
+  width: 100px; /* a imagem não pode ser maior que a sua div pai */
+  height: 100px; /* a altura é ajustada automaticamente para manter a proporção */
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro para a legenda */
+  color: #fff; /* texto em branco */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

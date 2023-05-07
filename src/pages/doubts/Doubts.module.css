@@ -1,17 +1,15 @@
 .container {
-    min-height: 100%;
     padding: 0 30px 0 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50em;
     display: flex;
     flex-direction: column;
  }
 .container > h3 {
-    text-align:center ;
-}
-.content {
-    
+    color: var(--color-green-primary);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-title);
+    align-items: center;
 }
 .question {
   display: flex;
@@ -43,6 +41,6 @@
 @media (max-width: 700px) {
   
     .container {
-      width: 25em;
+      width: 100%;
     }
 }

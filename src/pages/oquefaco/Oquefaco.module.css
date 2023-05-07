@@ -11,11 +11,11 @@
 .content {
     margin-left: auto;
     margin-right: auto;
-    max-width:700px;
+    max-width:750px;
     padding: 0 
 }
 .contentText {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .subTitle {
     color: var(--color-green-primary);
