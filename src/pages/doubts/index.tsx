@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Doubts.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { RotationProp } from '@fortawesome/fontawesome-svg-core';
+import { RotateProp } from '@fortawesome/fontawesome-svg-core';
 
 type Question = {
   title: string;
@@ -47,7 +47,7 @@ function Doubts() {
           <FontAwesomeIcon
             className={styles.arrowIcon}
             icon={faAngleDown}
-            rotation={activeIndex === index ? 180 as RotationProp : 0 as RotationProp}
+            rotation={activeIndex === index ? 180 as RotateProp : 0 as RotateProp}
           />
         </div>
         <div className={`${styles.answer} ${activeIndex === index ? styles.active : styles.notActive}`}>
