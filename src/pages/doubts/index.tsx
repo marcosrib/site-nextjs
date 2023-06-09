@@ -1,91 +1,62 @@
 import React, { useState } from 'react';
-import styles from './Doubts.module.css'
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import styles from './Doubts.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
-library.add(fas)
-
-
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 function Doubts() {
-const [isActive, setIsActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
 
-const setIsActiveAnswer = () => {
-    setIsActive(!isActive)  
-}
+  const toggleAnswer = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  const renderQuestions = () => {
+    const questions = [
+      {
+        title: 'Como saber se preciso de psicoterapia?',
+        answer: 'Resposta para a pergunta 1',
+      },
+      {
+        title: 'Psicólogo ou Psiquiatra?',
+        answer: 'Resposta para a pergunta 2',
+      },
+      {
+        title: 'Atendimento on-line',
+        answer: 'Resposta para a pergunta 3',
+      },
+      {
+        title: 'Como funciona a terapia?',
+        answer: 'Resposta para a pergunta 4',
+      },
+      {
+        title: 'Como faço para agendar uma consulta?',
+        answer: 'Resposta para a pergunta 5',
+      },
+    ];
+
+    return questions.map((question, index) => (
+      <div className={styles.content} key={index}>
+        <div className={styles.question} onClick={() => toggleAnswer(index)}>
+          <h3>{question.title}</h3>
+          <FontAwesomeIcon
+            className={styles.arrowIcon}
+            icon={faAngleDown}
+            rotation={activeIndex === index ? 180 : 0}
+          />
+        </div>
+        <div className={`${styles.answer} ${activeIndex === index ? styles.active : styles.notActive}`}>
+          <p>{question.answer}</p>
+        </div>
+      </div>
+    ));
+  };
+
   return (
     <section className={styles.container} id="doubts">
-     <h3>Dúvidas</h3>
-     <div  className={styles.content}>
-       <div className={styles.question} onClick={() => setIsActiveAnswer()} >
-        <h3>Como saber se preciso de psicoterapia? </h3>
-        <div className={`${isActive ? styles.open : styles.close}`}>
-         <FontAwesomeIcon className={`${isActive ? styles.close : styles.close}`} icon={"angle-down"}/>
-        </div>
-       </div>
-       <div className={`${styles.answer} ${isActive ? styles.active : styles.notActive}`} >
-        <p>skdfkdsajf naldfklsdafkldsakf lksafdkdksl</p>
-   
-       </div>
-       
-     </div>
-     <div  className={styles.content}>
-       <div className={styles.question} onClick={() => setIsActiveAnswer()} >
-        <h3>Psicólogo ou Psiquiatra?</h3>
-        <div className={`${isActive ? styles.open : styles.close}`}>
-         <FontAwesomeIcon className={`${isActive ? styles.close : styles.close}`} icon={"angle-down"}/>
-        </div>
-       </div>
-       <div className={`${styles.answer} ${isActive ? styles.active : styles.notActive}`} >
-        <p>skdfkdsajf naldfklsdafkldsakf lksafdkdksl</p>
-   
-       </div>
-       
-     </div>
-     <div  className={styles.content}>
-       <div className={styles.question} onClick={() => setIsActiveAnswer()} >
-        <h3>Atendimento on-line </h3>
-        <div className={`${isActive ? styles.open : styles.close}`}>
-         <FontAwesomeIcon className={`${isActive ? styles.close : styles.close}`} icon={"angle-down"}/>
-        </div>
-       </div>
-       <div className={`${styles.answer} ${isActive ? styles.active : styles.notActive}`} >
-        <p>skdfkdsajf naldfklsdafkldsakf lksafdkdksl</p>
-   
-       </div>
-       
-     </div>
-     <div  className={styles.content}>
-       <div className={styles.question} onClick={() => setIsActiveAnswer()} >
-        <h3>Como funciona a terapia? </h3>
-        <div className={`${isActive ? styles.open : styles.close}`}>
-         <FontAwesomeIcon className={`${isActive ? styles.close : styles.close}`} icon={"angle-down"}/>
-        </div>
-       </div>
-       <div className={`${styles.answer} ${isActive ? styles.active : styles.notActive}`} >
-        <p>skdfkdsajf naldfklsdafkldsakf lksafdkdksl</p>
-   
-       </div>
-       
-     </div>
-     <div  className={styles.content}>
-       <div className={styles.question} onClick={() => setIsActiveAnswer()} >
-        <h3>Como faço para agendar uma consulta? </h3>
-        <div className={`${isActive ? styles.open : styles.close}`}>
-         <FontAwesomeIcon className={`${isActive ? styles.close : styles.close}`} icon={"angle-down"}/>
-        </div>
-       </div>
-       <div className={`${styles.answer} ${isActive ? styles.active : styles.notActive}`} >
-        <p>skdfkdsajf naldfklsdafkldsakf lksafdkdksl</p>
-   
-       </div>
-       
-     </div>
-     
+      <h3>Dúvidas</h3>
+      {renderQuestions()}
     </section>
-  )
+  );
 }
 
 export default Doubts;
