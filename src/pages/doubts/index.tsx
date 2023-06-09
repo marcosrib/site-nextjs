@@ -2,16 +2,22 @@ import React, { useState } from 'react';
 import styles from './Doubts.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { RotationProp } from '@fortawesome/fontawesome-svg-core';
+
+type Question = {
+  title: string;
+  answer: string;
+};
 
 function Doubts() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleAnswer = (index) => {
+  const toggleAnswer = (index: number) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   const renderQuestions = () => {
-    const questions = [
+    const questions: Question[] = [
       {
         title: 'Como saber se preciso de psicoterapia?',
         answer: 'Resposta para a pergunta 1',
@@ -41,7 +47,7 @@ function Doubts() {
           <FontAwesomeIcon
             className={styles.arrowIcon}
             icon={faAngleDown}
-            rotation={activeIndex === index ? 180 : 0}
+            rotation={activeIndex === index ? 180 as RotationProp : 0 as RotationProp}
           />
         </div>
         <div className={`${styles.answer} ${activeIndex === index ? styles.active : styles.notActive}`}>

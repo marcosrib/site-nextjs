@@ -53,6 +53,7 @@ const Header: React.FC = () => {
             <AnchorLink onClick={closeMenu} href='#about'>Sobre</AnchorLink>
             <AnchorLink onClick={closeMenu} href='#oquefaco'>O que faço</AnchorLink>
             <AnchorLink onClick={closeMenu} href='#doubts'>Dúvidas</AnchorLink>
+            <AnchorLink onClick={closeMenu} href='#gallery'>Galeria</AnchorLink>
             <AnchorLink onClick={closeMenu} href='#contact'>Contato</AnchorLink>
           </div>
         </nav>
