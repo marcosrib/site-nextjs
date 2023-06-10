@@ -29,10 +29,16 @@
   .gallery {
     grid-template-columns: repeat(2, 1fr); 
   }
+  .container {
+    padding: var(--padding-content-mobile);
+  }
 }
 
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: 1fr; 
+  }
+  .container {
+    padding: var(--padding-content-mobile);
   }
 }
