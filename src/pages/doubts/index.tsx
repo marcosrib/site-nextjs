@@ -20,23 +20,33 @@ function Doubts() {
     const questions: Question[] = [
       {
         title: 'Como saber se preciso de psicoterapia?',
-        answer: 'Resposta para a pergunta 1',
+        answer: 'Existem momentos na vida que passamos por situações difíceis,'
+        + 'emoções instáveis e sofrimento psicológico frequente. Alguns exemplos de quando procurar terapia:\n\n'
+        + '- Alterações frequentes de humor\n' 
+        + '- Sintomas físicos no corpo de ansiedade\n'
+        + '- Sensação de fadiga e estresse constante\n'
+        + '- Perda do autocontrole\n'
+        + '- Pensamentos negativos\n'
+        + '- Insônia\n'
+        + '- Dificuldade em pensar com clareza ou tomar decisões\n'
+        + '- Depressão\n'
+        + '- Compulsão alimentar\n'
       },
       {
         title: 'Psicólogo ou Psiquiatra?',
-        answer: 'Resposta para a pergunta 2',
-      },
-      {
-        title: 'Atendimento on-line',
-        answer: 'Resposta para a pergunta 3',
+        answer: 'O psicólogo  atuará com habilidades para tratar, por meio de técnicas da psicoterapia,'
+        +'as diversas dificuldades mentais, comportamentais e emocionais que o paciente possa ter.\n\n'
+        +'O psiquiatra dispõe da capacidade de diagnosticar e indicar tratamentos com o uso de medicamentos.'
       },
       {
         title: 'Como funciona a terapia?',
-        answer: 'Resposta para a pergunta 4',
+        answer: 'A psicoterapia é um processo terapêutico em que junto com o paciente o profissional irá auxiliar em suas demandas emocionais e/ou psíquicas. Com objetivo de restabelecer a saúde e qualidade de vida do paciente.',
       },
       {
         title: 'Como faço para agendar uma consulta?',
-        answer: 'Resposta para a pergunta 5',
+        answer: 'Parabéns por ter chegado a essa etapa!!\n\n'+
+        'Para agendar clique no botão abaixo'+
+        '(colocar whatsapp)'
       },
     ];
 

@@ -20,6 +20,7 @@
 }
 
 .answer {
+    white-space: pre-line;
     background-color: var(--color-white);
 }
 
