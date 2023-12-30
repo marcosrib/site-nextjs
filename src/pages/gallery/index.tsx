@@ -31,7 +31,7 @@ const images = [
 function GalleryPage() {
   return (
     <div className={styles.container} id="gallery">
-      <h3>Galeria</h3>
+      <h3>Consultório</h3>
       <div className={styles.gallery}>
         {images.map((image, index) => (
           <img src={image.src} alt={image.alt} key={index} />

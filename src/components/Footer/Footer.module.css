@@ -52,6 +52,24 @@
     color: var(--color-white);
     font-weight: bold;
 }
+.icon {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    padding: 5px 0  5px 0 ;
+}
+
+.floatingIcon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Começa escondido */
+}
+
+.show {
+  opacity: 1;
+}
 
 @media (max-width: 700px) {
   
@@ -75,5 +93,6 @@
     #text {
         margin: 0 0 0 10px;
     }
+
   
 }
